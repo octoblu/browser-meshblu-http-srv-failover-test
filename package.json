@@ -1,0 +1,8 @@
+{
+  "name": "browser-meshblu-http-srv-failover-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:octoblu/browser-meshblu-http-srv-failover-test.git",
+  "author": "octoblu <serveradmin@octoblu.com>",
+  "license": "MIT"
+}
