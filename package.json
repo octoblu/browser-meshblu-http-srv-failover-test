@@ -2,7 +2,14 @@
   "name": "browser-meshblu-http-srv-failover-test",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "hs -c-1"
+  },
   "repository": "git@github.com:octoblu/browser-meshblu-http-srv-failover-test.git",
   "author": "octoblu <serveradmin@octoblu.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "browser-meshblu-http": "^6.3.2",
+    "http-server": "^0.9.0"
+  }
 }

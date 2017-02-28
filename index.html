@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Browser Meshblu HTTP Test</title>
+  <script src="/node_modules/browser-meshblu-http/deploy/browser-meshblu-http/latest/meshblu-http.bundle.js"></script>
+  <style>
+  pre {
+    font-size: 2em;
+  }
+  </style>
+</head>
+<body>
+  <pre id="content">
+  </pre>
+
+<script>
+var pre = document.getElementById('content');
+
+new MeshbluHttp({
+  "uuid":  "d20e978d-e4f8-479b-98d0-d1374e60fcee",
+  "token": "d5361646bbfb3d67b418ba387cfe9c35bfb7256d",
+  "resolveSrv": true,
+  "domain": "test.octo.space",
+  "secure": true
+}).whoami(function(error, me){
+  if (error) return pre.innerHTML = error.stack;
+  pre.innerHTML = JSON.stringify(me, null, 2);
+});
+
+</script>
+</body>
+</html>
